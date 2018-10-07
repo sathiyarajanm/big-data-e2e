@@ -1,0 +1,42 @@
+#Hadoop settings
+#export HADOOP_PREFIX="/opt/hadoop/hadoop-2.8.0"
+export HADOOP_PREFIX="/opt/hadoop2.7.3/hadoop-2.7.3"
+export PATH=$PATH:$HADOOP_PREFIX/bin
+export PATH=$PATH:$HADOOP_PREFIX/sbin
+export HADOOP_MAPRED_HOME=${HADOOP_PREFIX}
+export HADOOP_COMMON_HOME=${HADOOP_PREFIX}
+export HADOOP_HDFS_HOME=${HADOOP_PREFIX}
+export YARN_HOME=${HADOOP_PREFIX}
+
+export JAVA_HOME="/usr/lib/jvm/java-8-oracle"
+
+export SCALA_HOME="/opt/scala/scala-2.12.2"
+export PATH=$SCALA_HOME/bin:$PATH
+
+export SPARK_HOME="/opt/spark2/spark-2.1.1-bin-hadoop2.7"
+export PATH=$PATH:$SPARK_HOME/bin
+
+#export HBASE_HOME="/opt/hbase/hbase-0.98.7-hadoop2"
+export HBASE_HOME="/opt/hbase1/hbase-0.98.7-hadoop2"
+
+export PATH=$PATH:$HBASE_HOME/bin
+
+export HIVE_HOME="/opt/hive/apache-hive-2.1.1-bin"
+export PATH=$PATH:$HIVE_HOME/bin
+
+
+export SQOOP_HOME="/opt/sqoop/sqoop-1.4.6.bin__hadoop-2.0.4-alpha"
+export PATH=$SQOOP_HOME/bin:$PATH
+
+export PATH=$PATH:$HOME/anaconda3/bin
+alias python='/usr/bin/python3'
+
+
+export PATH=$PATH:/opt/pig/pig-0.16.0/bin
+export PIG_HOME=/opt/pig/pig-0.16.0
+export PIG_CLASSPATH=$HADOOP_HOME/conf
+
+export FLUME_HOME=/opt/flume/apache-flume-1.7.0-bin
+export FLUME_CONF_DIR=$FLUME_HOME/conf
+export FLUME_CLASSPATH=$FLUME_CONF_DIR
+export PATH=$PATH:$FLUME_HOME/bin
