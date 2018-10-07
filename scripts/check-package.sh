@@ -22,5 +22,12 @@ sudo apt-get install sublime-text-installer
 else
 	echo "sublime-3 has installed"
 	fi
+if ! type "expect" > /dev/null; then
+	echo "installing ssh pass and expect module"
+	sudo apt-get install ssh-pass
+	sudo apt-get install expect
+else
+	echo "ssh-pass and expect modules are already installed"
+	fi
 
 			
