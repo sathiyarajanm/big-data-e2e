@@ -1,0 +1,2 @@
+i
+://archive.apache.org/dist/spark/spark-2.3.2/spark-2.3.2-bin-hadoop2.7.tgzudo add-apt-repository ppa:webupd8team/java
