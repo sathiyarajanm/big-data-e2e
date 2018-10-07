@@ -40,4 +40,10 @@ else
 	echo "ssh-pass and expect modules are already installed"
 fi
 
-		
+if ! type "scala" > /dev/null; then
+	echo "installing scala module"
+	sudo apt-get install scala
+	else
+	echo "scala already installed"
+	fi
+
